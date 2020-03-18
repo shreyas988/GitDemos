@@ -29,7 +29,8 @@ public class Ecommerce_tc3 extends base {
 		
 		
 		startServer();
-		startEmulator();
+		//startEmulator();
+		System.out.println("Server started");
 		AndroidDriver<AndroidElement> driver=Capabilities("GeneralStoreApp");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		FormPage fp=new FormPage(driver);
