@@ -19,6 +19,7 @@ public class ApiDemosTest extends base {
 	public void apiDemo(String input) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		startServer();
+		System.out.println("Server started");
 		AndroidDriver<AndroidElement> driver=Capabilities("apiDemo");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		HomePage hp=new HomePage(driver);
